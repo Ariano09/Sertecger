@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Negocio - Productos y Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados */
+        .hero-section {
+            /* REEMPLAZA ESTA URL con una imagen tuya para el fondo, o déjala para ver el placeholder */
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://uni.edu.gt/wp-content/uploads/sites/19/2025/01/Diferencia-entre-ingenieria-informatica-y-de-software.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        /* ESTILOS PARA LOS BOTONES FLOTANTES */
+        .float-btn {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            color: #FFF; /* Texto/Icono blanco */
+        }
+        
+        /* Posición y color para WhatsApp */
+        .float-wa {
+            right: 120px; /* Separado del borde para hacer espacio a Telegram */
+            background-color: #25d366; 
+        }
+        .float-wa:hover {
+            background-color: #1a9c51;
+            color: #FFF;
+        }
+
+        /* Posición y color para Telegram */
+        .float-tg {
+            right: 40px; /* Más cerca del borde */
+            background-color: #0088cc; /* Color oficial de Telegram */
+        }
+        .float-tg:hover {
+            background-color: #007bb6;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DigitalPro</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4">¡Bienvenidos a DigitalPro!</h1>
+            <p class="lead">La Mejor Solución Para Tus Necesidades en Computadoras e Impresoras y Servicios Digitales.</p>
+            <a href="#contacto" class="btn btn-warning btn-lg mt-3">Solicitar una cotización ahora</a>
+        </div>
+    </header>
+
+    <section id="productos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Servicios Digitales</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://www.rcrperu.com/wp-content/uploads/2025/05/banco.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Pagos al Banco de la Nación</h5>
+                            <p class="card-text">Todo online trámites y servicios del Estado, pagamos tus tasas, multas y servicios de diferentes entidades públicas, sin necesidad de ir a una agencia del banco.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/M365-across-devices-business-Highlight-2120x1190:VP2-859x540">
+                        <div class="card-body">
+                            <h5 class="card-title">Venta de Programas, Aplicativos y Diagramas</h5>
+                            <p class="card-text">Tenemos programas y aplicativos para computadoras , celulares y impresoras. Asimismo ofertamos diagramas para Tv, computadoras, laptops y celulares. </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://anydesk.com/_static/img/devices/anydesk-device-chrome-e4cc04.jpg" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Reparación e Instalacion de Programas y Aplicativos Online</h5>
+                            <p class="card-text">Reparamos e instalamos todo tipo de programas y aplicativos, de computadoras, laptops y impresoras de todas las marcas y modelos.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Otros Servicios</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h3>Servicio de Edición</h3>
+                    <p>Editamos libros, revistas, documentos y imagenes en diferentes formatos</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h3>Servicios Educativos</h3>
+                    <p>Se vende materiales didacticos, libros y cursos en PDF y videos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Hablemos de tu Proyecto</h2>
+            <p class="lead">Contáctanos directamente para empezar hoy mismo.</p>
+            
+            
+            <a 
+                href="https://wa.me/51936385755?text=Hola,%20estoy%20interesado%20en%20sus%20servicios%20y%20productos%20que%20vi%20en%20su%20página%20web." 
+                target="_blank" 
+                class="btn btn-success btn-lg mt-3 me-2" 
+            >
+                Chatear por WhatsApp
+            </a>
+
+            <a 
+                href="https://t.me/sertecger" 
+                target="_blank" 
+                class="btn btn-info btn-lg mt-3" 
+                style="background-color: #0088cc; border-color: #0088cc;"
+            >
+                Chatear por Telegram
+            </a>
+            
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mi Marca. Todos los derechos reservados.</p>
+    </footer>
+
+    <a 
+        href="https://wa.me/51936385755?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20productos." 
+        class="float-btn float-wa" 
+        target="_blank"
+    >
+        W
+    </a>
+
+    <a 
+        href="https://t.me/sertecger" 
+        class="float-btn float-tg" 
+        target="_blank"
+    >
+        T
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
